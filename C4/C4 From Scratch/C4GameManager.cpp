@@ -16,21 +16,21 @@ void GameManager::playGame() {
 
         while (isRunning) {
             board.displayBoard();
-            std::cout << "Player " << currentPlayer << ", enter a column number to place your token: ";
-            std::cin >> column;
+            cout << "Player " << currentPlayer << ", enter a column number to place your token: ";
+            cin >> column;
 
             if (!board.playerMove(column - 1, currentPlayer)) {
-                std::cout << "Invalid move. Try again." << std::endl;
+                cout << "Invalid move. Try again." << endl;
                 continue;
             }
 
             if (board.isWin(currentPlayer)) {
                 board.displayBoard();
-                std::cout << "Player " << currentPlayer << " wins!" << std::endl;
+                cout << "Player " << currentPlayer << " wins!" << endl;
                 isRunning = false;
             } else if (board.isDraw()) {
                 board.displayBoard();
-                std::cout << "It's a draw!" << std::endl;
+                cout << "It's a draw!" << endl;
                 isRunning = false;
             }
 
