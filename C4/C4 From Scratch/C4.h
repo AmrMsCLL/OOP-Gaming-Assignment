@@ -16,23 +16,11 @@ protected:
 public:
     C4Board();
     void displayBoard();
-    bool playerMove(int column, char token); // another name for place token
+    bool playerMove(int column, char token);
     bool isWin(char token);   
     bool isDraw();
     bool isGameOver(char token);
 };
-
-// class Player{
-// protected:
-//     string name;
-//     char symbol;
-// public:
-//     Player (char symbol); // Needed for computer players
-//     Player (int order, char symbol);
-//     bool playerMove(int column, char token); // another name for place token
-//     string to_string();
-//     char get_symbol();
-// };
 
 class GameManager{
 private:
