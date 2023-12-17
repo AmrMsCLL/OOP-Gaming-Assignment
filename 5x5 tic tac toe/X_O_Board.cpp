@@ -1,7 +1,4 @@
-// Class definition for X_O_Board class
-// Author:  Mohammad El-Ramly
-// Date:    10/10/2022
-// Version: 1
+
 #include <iostream>
 #include <random>
 #include <iomanip>
