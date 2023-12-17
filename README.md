@@ -11,4 +11,4 @@ TASK#5 : Coming soon     // GUI
 Collaborators :   
 Amr Mohamed El-Sheriey - amrsherieycll@gmail.com -20220450.      
 Ahmed Mohamed Saber - ahmadmohmad200020@gmail.com - 20220032.      
-Medhat Ahmed - xxx@gmail.com - 20220456.      
+Medhat Ahmed - medhatsakori34@gmail.com - 20220456.      
