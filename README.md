@@ -3,7 +3,7 @@ OOP Assignment#3 By Dr.Elramly - FCAI-CU.
 
 This Assignment is comprised of 3 games and their integration along with an AI player and GUI elements             
 TASK#1 : DONE            // indivisual problems      
-TASK#2 : Coming soon     // The 3 Games       
+TASK#2 : DONE     // The 3 Games       
 TASK#3 : Coming soon     // Their Integration      
 TASK#4 : Coming soon     // Code Quality        
 TASK#5 : Coming soon     // GUI        
