@@ -1,7 +1,3 @@
-//
-// Created by ahmad on 12/13/2023.
-//
-
 #include "Pyramid_Board.h"
 #include <iostream>
 using namespace std;
@@ -14,13 +10,15 @@ Pyramid_Board ::Pyramid_Board()
     {
         board[i] = new char[n_cols];
         for (int j = 0; j < n_cols; j++)
-            board[i][j] = 0;
+            board[i][j] = ' ';
     }
+    board[0][0] = board[0][1] = board[0][3] = board[0][4] = board[1][0] = board[1][4] =  'A';
+
 }
 bool Pyramid_Board::update_board(int x, int y, char mark)
 {
 
-    if (!(x < 0 || x > 2 || y < 0 || y > 4) && (board[x][y] == 0))
+    if (!(x < 0 || x > 2 || y < 0 || y > 4) && (board[x][y] == ' '))
     {
         board[x][y] = toupper(mark);
         n_moves++;
@@ -56,15 +54,16 @@ bool Pyramid_Board::is_winner()
     {
         return true;
     }
-    int cnt = 0;
-    for (int i = 0; i < 4; i++)
+    else if((board[0][2] == board[1][2] && board[1][2] == board[2][2]) && (board[0][2] == 'X' || board[0][2] == 'O'))
     {
-        if (board[2][i] == board[2][i + 1] && (board[2][i] == 'X' || board[2][i] == 'O'))
-            cnt++;
-        if (cnt >= 3)
-            return true;
+        return true;
     }
-    return false;
+    else if((board[2][0] == board[2][1] && board[2][1] == board[2][2]) && (board[2][0] == 'X' || board[2][0] == 'O') ||
+            (board[2][1] == board[2][2] && board[2][2] == board[2][3]) && (board[2][1] == 'X' || board[2][1] == 'O')||
+            (board[2][2] == board[2][3] && board[2][3] == board[2][4]) && (board[2][2] == 'X' || board[2][2] == 'O'))
+        return true;
+    else
+        return false;
 }
 
 bool Pyramid_Board::is_draw()
