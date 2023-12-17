@@ -1,7 +1,4 @@
-// Class definition for XO game classes
-// Author:  Mohammad El-Ramly
-// Date:    10/10/2022
-// Version: 1
+
 #ifndef _BoardGame_CLASSES_H
 #define _BoardGame_CLASSES_H
 using namespace std;
