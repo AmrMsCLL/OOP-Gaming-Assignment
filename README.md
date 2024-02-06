@@ -6,7 +6,7 @@ TASK#1 : DONE            // indivisual problems
 TASK#2 : DONE            // The 3 Games       
 TASK#3 : DONE            // INTEGRATION   
 TASK#4 : DONE            // Code Quality        
-TASK#5 : Coming soon     // GUI        
+TASK#5 : Done            // GUI        
 
 Collaborators :   
 Amr Mohamed El-Sheriey - amrsherieycll@gmail.com -20220450.      
